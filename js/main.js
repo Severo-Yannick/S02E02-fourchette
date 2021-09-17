@@ -13,18 +13,18 @@ do {
   var responseInteger = parseInt(response, 10);
   console.log(responseInteger);
 
-  // Obliger l'utilisateur à entrer un nombre
+  // Imposer à l'utilisateur d'entrer un nombre
   if (isNaN(responseInteger)) {
     alert('Merci de saisir un nombre')
   }
   // Si la saisie est trop petite on pourrait l'indiquer
   else if (randomNumber < responseInteger) {
-    score++
+    score++;
     alert('C\'est moins')
   }
   // Sinon on pourrait dire que c'est trop grand
   else if (randomNumber > responseInteger) {
-    score++
+    score++;
     alert('C\'est plus')
   }
 } while (randomNumber != responseInteger);
