@@ -16,6 +16,10 @@ do {
   if (randomNumber < responseInteger) {
     alert('C\'est moins')
   }
+  // Sinon on pourrait dire que c'est trop grand
+  if (randomNumber > responseInteger) {
+    alert('C\'est plus')
+  }
 } while (randomNumber != responseInteger);
 
 alert("C'est gagné ! 🎉");
